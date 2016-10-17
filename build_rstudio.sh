@@ -44,7 +44,7 @@ cd ~/Downloads
 wget http://dl.google.com/closure-compiler/compiler-latest.zip
 unzip compiler-latest.zip
 rm COPYING README.md compiler-latest.zip
-sudo mv compiler.jar ~/Downloads/rstudio-$VERS/src/gwt/tools/compiler/compiler.jar
+sudo mv closure-compiler*.jar ~/Downloads/rstudio-$VERS/src/gwt/tools/compiler/compiler.jar
 
 # Configure cmake and build RStudio
 cd ~/Downloads/rstudio-$VERS/
@@ -69,7 +69,7 @@ export LANGUAGE=en_US.UTF-8
 
 # Clean the system of packages used for building
 sudo apt-get autoremove -y cabal-install ghc openjdk-7-jdk pandoc libboost-all-dev
-sudo rm -r -f ~/rstudio-$VERS
+sudo rm -r -f ~/Downloads/rstudio-$VERS
 sudo apt-get autoremove -y
 
 # Start the server
