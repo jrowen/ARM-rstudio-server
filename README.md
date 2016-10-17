@@ -19,7 +19,7 @@ After the server has been built and installed, the easiest way to start the serv
 sudo enter-chroot -n stretch
 sudo rstudio-server start
 ```
-Finally, rom a new Chrome tab navigate to `localhost:8787` and log in using your chroot credendials.
+Finally, from a new Chrome tab navigate to `localhost:8787` and log in using your chroot credentials.
 
 ## Contributions
 Please don't hesitate to file an issue if you run into problems, and pull requests are welcome.
